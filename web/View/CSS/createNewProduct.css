@@ -1,0 +1,104 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Apr 2024, 8:15:01 pm
+    Author     : Thomas Cheam
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.createProductBg{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 244, 246);
+    align-items: center;
+    height: 100vh;
+}
+.createProductInfo{
+    background-color:rgb(255, 255, 255);
+    margin:0 auto 0 auto;
+    box-shadow: 0px 5px 5px 3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw--shadow-color: #000;
+    border-radius: 12px;
+    padding: 35px 80px;
+    width: 50%;
+}
+.createProductContent{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    color: rgb(107, 114, 128);
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.createProductContent div p span{
+    font-weight: 300;
+    color:rgb(75, 85, 99);
+}
+.closeBtn{
+    background-color: rgb(248, 113, 113);
+    padding: 8px 16px;
+    border:0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+.closeBtn:hover{
+    background-color:rgb(239, 68, 68);
+}
+.closeBtn:active{
+    background-color:rgb(185, 28, 28);
+}
+.createBtn{
+    background-color: rgb(255,255,255);
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-weight: bold;
+    width:100%;
+    color: rgb(34, 197, 94);
+    border: 2px solid rgb(34, 197, 94);
+}
+.createBtn:hover{
+    background-color:rgb(204, 255, 204);
+}
+.createBtn:active{
+    background-color: #22c55e
+}
+
+.productFlex{
+    display: flex;
+}
+
+.p1 {
+    width:40%
+}
+
+.p2 {
+    width:60%
+}
+
+.productFlex p{
+    margin: 16px 0;
+}
+
+.productFlex p input{
+    outline-width: 0.5px;
+    outline-style: solid;
+    outline-color: black;
+    border-radius: 1rem;
+    padding: 4px 12px;
+}
+
+.productFlex p input:hover{
+    outline-color: #81f542;
+}
+
+.productFlex p input:focus{
+    outline-color: #22c55e;
+    outline-width: 2px;
+
+}

@@ -1,0 +1,165 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17 Apr 2024, 10:07:36 am
+    Author     : Rong
+*/
+
+body   {
+    overflow-x: hidden;
+} 
+
+.content{
+    position: relative;
+    background: #e4e8f0;
+    width: 95%;
+    padding: 2%;
+    margin-left: 6rem;
+   
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin-bottom: 2%;
+}
+
+.card{
+    background-color: white;
+    padding: 4%;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.cardTitle{
+    padding-bottom: 2%;
+    font-size: 14px;
+}
+
+.payment{
+    border-radius: 10px;
+    padding: 1%;
+    width: 20%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 10px;
+}
+
+.paymentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.paymentUser{
+    font-size:90%;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.totalAmount{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+
+.amountValue{
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 10%;
+}
+
+.tableData,
+.discountData{
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 4%;
+    
+}
+
+.financeTable,
+.discountTable{
+    width: 100%;
+}
+
+.financeTable table,
+.discountTable table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.financeTable thead,
+.discountTable thead{
+    background-color: #e4e8f0;
+    color: black;
+}
+
+.financeTable th,
+.discountTable th{
+    padding: 2%;
+    text-align: left;
+}
+
+.financeTable tbody,
+.discountTable tbody{
+    background-color: #545050;
+}
+
+.financeTable td,
+.discountTable td{
+    padding: 2%;
+    font-size: 16px;
+    color: white;
+}
+
+.financeTable td a{
+    font-size: 24px;
+    color: white;
+}
+
+.financeTable tr:nth-child(even),
+.discountTable tr:nth-child(even){
+    background-color: #b0a4a4;
+}
+
+.financeTable tfoot,
+.discountTable tfoot{
+    background-color: #e4e8f0;
+    font-weight: bold;
+    color: black;
+}
+
+.financeTable tfoot td,
+.discountTable tfoot td{
+    padding: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .payment {
+        width: 45%; 
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .payment {
+        width: 100%; 
+    }
+}

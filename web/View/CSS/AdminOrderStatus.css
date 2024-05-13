@@ -1,0 +1,91 @@
+.all{
+    width:100%;
+    height:100%;
+    display: flex;
+}
+
+.all::after{
+    /*clear:both;/*/
+}
+
+section{
+    display:flex;
+    float:left;
+    width:80%;
+}
+
+
+/*Order List section*/
+section#order{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 40px 80px;
+}
+
+div#orderContent{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#orderList{
+    border:solid 1px gainsboro;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    width:100%;
+    padding:1%;
+    border-collapse:collapse
+}
+
+table#orderList tr{
+    border-top:1px #e5e5e5 solid;
+    border-bottom:1px #e5e5e5 solid;
+}
+
+table#orderList tr th{
+    text-align:center;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left: 1%;
+    background-color: #ebebeb;
+}
+
+table#orderList tr td{
+    text-align:center;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left: 1%;
+}
+
+table#orderList tr td select{
+    padding:2% 4%;
+    border-color:#c9c9c9;
+
+}
+
+table#orderList tr td button{
+    padding:8%;
+    background-color: transparent;
+    border:1px #c4c4c4 solid;
+    border-radius:4px;
+}
+
+table#orderList tr td form input{
+    padding:1%;
+    background-color: transparent;
+    border:1px #c4c4c4 solid;
+    border-radius:4px;
+}
+
+input#search:hover{
+    cursor:pointer;
+}
+
+
+td.custName{
+    color:#8caafc;
+}
+
+
+

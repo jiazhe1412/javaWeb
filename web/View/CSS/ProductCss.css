@@ -1,0 +1,120 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 Mar 2024, 1:14:01 pm
+    Author     : Lee
+*/
+
+/*Product Page*/
+@media (max-width: 960px) {
+    .productList{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .productCategory{
+        display:none;
+    }
+    .smallCategory{
+        display:block;
+    }
+    .category1{
+        width: 50%;
+    }
+    .category2{
+        width: 50%;
+    }
+    .searchBar{
+        width: 80%;
+    }
+}
+
+/*ProductInformation*/
+
+.success-message {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: none;
+    animation: slideUp 0.4s ease-in-out;
+    width: fit-content;
+    z-index:9999;
+}
+
+.unsuccess-message{
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: none;
+    animation: slideUp 0.4s ease-in-out;
+    width: fit-content;
+    z-index:9999;
+}
+
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-25vh);
+    }
+}
+
+@media (max-width: 640px) {
+    .info1{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .info1Above, .info2below{
+        width: 100%;
+        padding: 3%;
+    }
+
+    .productAdd{
+        display:grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .productAdd input{
+        margin-bottom: 5%;
+    }
+}
+
+/*Add to Cart*/
+@media (max-width: 640px) {
+    .cartButton{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .cartButton button{
+        margin-top: 5%;
+        margin-bottom: 5%
+    }
+
+    .cartContent{
+        padding: 5%
+    }
+}
+
+.imageProduct{
+    aspect-ratio: 19999/20000;
+    object-fit: cover;
+}

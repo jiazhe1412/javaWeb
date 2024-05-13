@@ -1,0 +1,142 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 Apr 2024, 6:53:54 pm
+    Author     : Thomas Cheam
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.outlineORbg{
+    background-color: rgb(243, 244, 246);
+}
+.orderRecordBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    aspect-ratio:3/5;
+    object-fit: cover;
+}
+
+.searchContainer{
+    padding: 0 20px 0 0;
+    margin: 0 auto;
+}
+.searchBar{
+    font-weight: bold;
+    width: 100%;
+    border:0;
+    border-radius: .8rem;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 50px 0;
+    background-color:white;
+    outline-color: rgb(219, 220, 222);
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+.searchBar:hover{
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    background-color:rgb(236, 237, 239);
+}
+
+.searchBar:focus{
+    background-color:white;
+    outline-color: #22c55e;
+    outline-width: 5px;
+    outline-style: solid;
+}
+
+.orderRecordContent{
+    width: 100%;
+    margin: 0px auto;
+    text-align:center;
+    background-color:rgb(255, 255, 255);
+    border-radius: .8rem;
+    padding: 40px 40px;
+    box-shadow: 0 .4rem .8rem rgb(102, 102, 102);
+    max-width: fit-content;
+    overflow: hidden;
+    /*max-height: 500px;*/
+}
+
+.allContent{
+    margin: 20px 0 80px 0;
+    /*width: 100%;*/
+}
+
+.oRhead{
+    font-weight:bold;
+    margin: 0 auto 0 auto;
+    background-color: rgb(243, 244, 246);
+    padding: 10px 0px;
+    border-radius: .8rem;
+    margin: 0px;
+}
+.oRtable{
+    padding: 20px;
+    border-radius: .8rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+.oRtable::-webkit-scrollbar{
+    width:0.0rem;
+    height: 0.5rem;
+}
+table, th, td{
+    border-collapse: collapse;
+    padding: 2rem;
+    border: 0px;
+    background-color:rgb(243, 244, 246);
+
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: rgb(224, 224, 235);
+}
+.status{
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: .4rem;
+}
+
+.status.delivered{
+    background-color: rgb(134, 228, 157);
+    color: rgb(0, 107, 33);
+}
+.status.pending{
+    background-color: rgb(235, 196, 115);
+    color:rgb(77, 77, 0);
+}
+.status.shipping{
+    background-color: rgb(111, 202, 234);
+    color: rgb(0, 0, 179);
+}
+.status.packaging{
+    background-color:rgb(216, 147, 163);
+    color: rgb(179, 0, 33);
+}
+.closeBtn{
+    background-color:rgb(248, 113, 113);
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 5px;
+    color:white;
+    font-size: 1rem;
+}
+.closeBtn:hover{
+    background-color:rgb(239, 68, 68);
+}
+.closeBtn:active{
+    background-color:rgb(185, 28, 28);
+}

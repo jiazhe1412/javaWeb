@@ -1,0 +1,157 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 Apr 2024, 3:20:53 pm
+    Author     : Rong
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: url("../image/pet.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    margin: 80px auto;
+    width: 550px;
+    height: 450px;
+    background: rgba(255 ,255 ,255 , 0.8);
+    padding: 64px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 30px black;
+}
+
+.login-header,
+.register{
+    text-align: center;
+}
+
+.login-card a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+.login-card a:hover{
+    text-decoration: underline;
+}
+
+.login-header {
+    margin-bottom: 16px;
+
+}
+
+.login-header h1{
+    font-size: 32px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.login-form .form-item{
+    position: relative;
+}
+
+.login-form .form-item .email,
+.login-form .form-item .user,
+.login-form .form-item .password{
+    position: absolute;
+    top: 13px;
+    left: 22px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.login-form .form-item .pswcheck {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.login-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-form .form-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.register{
+    margin-top: 24px;
+    font-size: 14px
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"]{
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px;
+    outline: none;
+    background: rgba(255,255,255,0.3);
+    padding: 16px ;
+    border-radius: 100px;
+    padding-left: 55px;
+    width: 85%;
+    transition: background 0.5s;
+}
+
+.login-card input:focus {
+    background: white;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+
+.login-card input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+
+.login-form button {
+    padding: 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.login-form button:hover{
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.login-form .errorMessage{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+@media(max-width: 768px){
+    body{
+        padding: 32px 0;
+    }
+
+    .login-card{
+        width: 360px;
+        padding: 32px;
+    }
+
+
+}
+

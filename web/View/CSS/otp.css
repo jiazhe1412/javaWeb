@@ -1,0 +1,101 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 7 Apr 2024, 9:46:51 pm
+    Author     : Rong
+*/
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../image/pet.jpg");
+    /*height: 100vh;*/
+}
+
+.otp {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 48px;
+    box-shadow: 0 10px 40px -20px black;
+    width: fit-content;
+    margin: 80px auto;
+}
+
+.btl{
+    padding-right: 500px;
+}
+
+.btl a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.number{
+    margin: 30px 0;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(6, auto);
+}
+
+.number input {
+    width: 60px;
+    height: 70px;
+    font-size: 35px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.resend a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.otp button{
+    background-color:black;
+    border: none;
+    padding: 15px 50px;
+    font-size: 19px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.otp button[disabled]{
+    opacity: 0.6;
+    /*cursor: default;*/
+}
+
+.otpVerifyBtn:hover{
+    background-color: rgb(140, 140, 140);
+}
+
+.otpVerifyBtn:active{
+    background-color: black;
+    transition: 0s;
+}
+
+.errorMessage{
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}

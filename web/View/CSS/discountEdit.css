@@ -1,0 +1,68 @@
+body{
+    background-image: url("../image/wtf.jpg");
+}
+
+.discountContent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    border:2px solid black;
+    box-shadow: 5px 2px 10px black;
+    background-color:white;
+    opacity: 0.9;
+    width: 40%;
+}
+
+.title{
+    font: italic bold 180% monospace;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 68%;
+    margin-left: 12%;
+    font: italic bold 120% monospace;
+}
+
+input{
+    font: italic bold 80% monospace;
+
+}
+td, th {
+    border: 0px solid grey;
+    text-align: left;
+    padding: 8px;
+}
+
+.text{
+    width:120%;
+}
+
+.btnEdit{
+    margin-left: 17%;
+    background-color: lightgreen;
+
+}
+.btnClear{
+    margin-left: 2%;
+    background-color: white;
+}
+.btnCancel{
+    margin-left: 2%;
+    background-color: white;
+}
+
+.btnEdit,.btnClear,.btnCancel{
+    width: 20%;
+    height:20%;
+    font: italic bold 110% monospace;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1px 6px;
+    border: 2px solid black;
+}

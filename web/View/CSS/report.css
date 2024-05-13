@@ -1,0 +1,84 @@
+body {
+    background-image: url("../image/report4.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width:80%;
+}
+
+div#firstcol, div#secondcol{
+    display:inline-block;
+    width:48%;
+}
+
+.amountEarn,
+.inventory,
+.productCurrentMonthlySales,
+.saleSummary {
+    margin-bottom: 2%;
+    background-color: white;
+    box-shadow: 5px 2px 10px black;
+    border: 2px solid black;
+}
+
+.amountEarn {
+    width: 60%;
+    min-width: 300px;
+    height: auto;
+}
+
+.amountEarn th {
+    font: bold 2.5vw monospace;
+    color: green;
+    border: 2px solid black;
+    box-shadow: 5px 2px 10px black;
+    background-image: radial-gradient(white, lightgreen);
+}
+
+.amountEarn td {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2vw;
+    color: lightblue;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.productCurrentMonthlySales{
+    width: 80%;
+    height: auto;
+}
+.saleSummary{
+    width:80%;
+    height:auto;
+}
+
+.inventory{
+    width: 60%;
+    height: auto;
+}
+.productCurrentMonthlySales,
+.saleSummary,
+.inventory {
+    min-width: 200px;
+}
+button{
+    margin-left: 87%;
+    margin-top:2%;
+}
+@media only screen and (min-width: 668px) {
+    .container {
+        flex-direction: column;
+    }
+    .productCurrentMonthlySales,
+    .saleSummary,
+    .inventory {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,381 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 Apr 2024, 3:08:41 pm
+    Author     : Rong
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.openprod {
+    font-family: 'Poppins', sans-serif;
+    width: 400px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.openprod p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: green;
+}
+
+.openprod h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.openprod button{
+    background-color: #22c55e;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 30%;
+}
+
+.sayhello img{
+    width: 100vw;
+    height: 90vh;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+    width:80%;
+    margin: 70px auto;
+}
+
+.product-container div img{
+    aspect-ratio: 4/2;
+    object-fit: cover;
+}
+
+.product-container .product1 {
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FF7F27;
+}
+
+.product-container .product1 p{
+    margin-left: 55%;
+    position: relative;
+    bottom: 30%;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+}
+
+.product-container .product1 button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 54%;
+    position: relative;
+    bottom: 30%;
+    transition: 0.5s;
+}
+
+.product-container .product1 button:hover{
+    transition: 0.5s;
+    box-shadow: 3px 3px 15px;
+}
+
+.product-container .product2 {
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ff4d4d;
+}
+
+.product-container .product2 p{
+    position: relative;
+    bottom: 40%;
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    margin-left: 20%;
+}
+
+.product-container .product2 img{
+    width: 190px;
+    height: 118px;
+    margin-left: 60%;
+}
+
+.product-container .product2 button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 18%;
+    position: relative;
+    bottom: 40%;
+    transition: 0.5s;
+}
+
+.product-container .product2 button:hover{
+    transition: 0.5s;
+    box-shadow: 3px 3px 15px;
+}
+
+.bgimg {
+    /*padding-top: 20px;*/
+    padding-bottom: 100px;
+}
+
+.bgimg .fixedImg{
+    background-image: url(../image/petbg.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.bgimg .fixedImg p.about{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 8%;
+}
+
+.bgimg .fixedImg h1{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.bgimg .fixedImg p.desc{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.bgimg .fixedImg button{
+    margin-top: 2%;
+    background-color: #81f542;
+    font-size: 18px;
+    color: white;
+    border-radius: 50%;
+    margin-left: 48%;
+    width: 4%;
+    padding: 18px 2px;
+    border: none;
+    transition: 0.25s;
+}
+
+.bgimg .fixedImg button:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.dis{
+    padding-bottom: 100px;
+}
+
+.dis .discount{
+    width: 75%;
+    height: 175px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.dis .discount .telegram{
+    font-family: 'Poppins', sans-serif;
+    color: #72c248;
+    font-size: 70px;
+    margin-left: 5%;
+}
+
+.dis .discount h1{
+    margin-left: 5%;
+    font-size: 24px;
+}
+
+.dis .discount input{
+    font-family: 'Poppins', sans-serif;
+    width: 30%;
+    border-radius: 20px;
+    height: 25%;
+    margin-left: 3%;
+    padding-left: 20px;
+}
+
+.dis .discount a{
+    color: white;
+    background-color: #72c248;
+    width: 15%;
+    border-radius: 20px;
+    height: 25%;
+    margin-left: 3%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    transition: 0.25s;
+}
+
+.dis .discount a:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.food-list, .toys-list{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap:8px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.food-content-all, .toys-content-all{
+    width: 20rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin: 30px 0;
+}
+
+.food-content, .toys-content{
+    background-color: white;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0/0.3);
+}
+
+.food-content:hover, .toys-content:hover{
+    transform: scale(1.1);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-color: #6b7280;
+}
+
+.food-product, .toys-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.food-content a img, .toys-content a img{
+    aspect-ratio: 19999/20000;
+    object-fit: cover;
+}
+
+.foodHeader div a, .toysHeader div a{
+    width: 50%;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+
+.foodHeader div a:hover, .toysHeader div a:hover{
+    text-decoration: underline;
+    color: rgb(34, 197, 94);
+}
+
+@media only screen and (max-width: 700px) {
+    /* Adjust styles for smaller screens */
+    /* For example: */
+    .bgimg .fixedImg button {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .food-list{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        align-items: center;
+        justify-items: center;
+        width:80%;
+        margin: 70px auto;
+    }
+
+    .product1, .product2{
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width: 1097.14px) {
+    .food-list{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .food-list{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .food-list{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

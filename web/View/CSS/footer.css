@@ -1,0 +1,182 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 Mar 2024, 3:30:16 pm
+    Author     : Rong
+*/
+
+footer p{
+   margin: 0;
+   font-family: sans-serif;
+}
+
+footer {
+    transition: 0.3s;
+    color: white;
+    background-color: #22c55e;
+    width:100%;
+    font-weight: 500;
+}
+
+.link p{
+    margin: 5px 0;
+}
+
+.container-all{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:8px;
+    justify-items: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+.footer-1{
+    width:100%;
+}
+
+.footer-2{
+    width:fit-content;
+
+}
+
+.footer-1 p a, .footer-2 p a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-2 p a i{
+    padding: 0 6px;
+}
+
+.footer-1 p a:hover, .footer-2 p a:hover{
+    transition: 0.3s;
+    color: black;
+}
+
+footer p{
+    
+}
+
+/*footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 4.5%;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer nav ul li.petStore a {
+    margin: 40px;
+    padding-left: 145px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+footer nav ul li.home a {
+    padding-left: 100px;
+    margin-right: 10px;
+}
+
+footer nav ul li.product a {
+    margin-right: 10px;
+}
+
+footer nav ul li.promotion a {
+    margin-right: 10px;
+}
+
+footer nav ul li.about a {
+    margin-right: 10px;
+}
+
+footer nav ul li.contact a {
+    margin-right: 10px;
+}
+
+footer nav ul li.fb a{
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+footer nav ul li.ins a{
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+footer nav ul li.twi a{
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+footer nav ul li.yt a{
+    font-size: 22px;
+}
+
+
+footer nav ul li a:hover {
+    transition: 0.3s;
+    color: black;
+}
+
+
+@media (max-width: 700px) {
+    footer {
+        height: auto;
+    }
+
+    footer nav ul {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    footer nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    footer nav ul li.petStore a {
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    footer nav ul li.home a{
+        margin: 0;
+        padding-left: 0;
+    }
+
+    footer nav ul li a {
+        font-size: 16px;
+    }
+
+    footer nav ul li.fb a,
+    footer nav ul li.ins a,
+    footer nav ul li.twi a,
+    footer nav ul li.yt a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}*/
+
+@media (max-width: 960px) {
+    .container-all{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .footer-2{
+        width: 100%;
+    }
+}

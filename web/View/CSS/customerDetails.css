@@ -1,0 +1,97 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Apr 2024, 4:08:05 pm
+    Author     : Thomas Cheam
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.custDetailsOutlineBg{
+    background-color: rgb(243, 244, 246);
+
+}
+.customerDetailsBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 244, 246);
+    /*height: 150vh;*/
+}
+.customerInfo{
+    background-color: rgb(255,255,255);
+    margin: 80px auto;
+    box-shadow: 0px 5px 5px 3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-color: #000;
+    border-radius: 12px;
+    padding: 35px 80px;
+    width: 50%;
+}
+.customerDetails{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    color:rgb(107, 114, 128);
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.customerDetails div p span{
+    font-weight: 300;
+    color:rgb(75, 85, 99);
+}
+.closeBtn{
+    background-color: rgb(248, 113, 113);
+    padding:8px 16px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+.closeBtn:hover{
+    background-color:rgb(239, 68, 68);
+}
+.closeBtn:active{
+    background-color:rgb(185, 28, 28);
+}
+.editDetailsBtn{
+    background-color: rgb(255,255,255);
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: 2px solid rgb(30, 144, 255);
+    color: rgb(30, 144, 255);
+    font-size: 1.2rem;
+}
+.editDetailsBtn:hover{
+    background-color:rgb(179, 217, 255);
+}
+.editDetailsBtn:active{
+    background-color:rgb(0, 89, 179);
+}
+
+.customerContentDetails {
+    display: flex;
+}
+
+.customerContentDetails .p1 {
+    width: 40%;
+}
+
+.customerContentDetails .p2 {
+    width: 60%;
+}
+
+@media (max-width:1097.14px){
+    .customerDetails{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .customerContentDetails .p1 {
+        width: 50%;
+    }
+
+    .customerContentDetails .p2 {
+        width: 50%;
+    }
+}

@@ -1,0 +1,305 @@
+/*Page Body Styles*/
+p{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body{
+    width:100%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    background-color: rgb(243, 244, 246);
+}
+
+
+/*The path div*/
+
+.link-box{
+    margin: 0 auto 40px auto;
+    padding: 8px 24px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(175, 179, 187);
+    border: 1px solid rgb(175, 179, 187);
+    border-radius: 1.5rem;
+    width: 66.67%;
+
+}
+
+.link-box p{
+    margin: 0;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(175, 179, 187);
+}
+
+.hoverLink:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/* The progress indicator */
+.progressBar {
+    width: 80%;
+    margin:0 auto 2% auto;
+    padding: 2%;
+}
+
+.statusBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    cursor: default;
+}
+
+.point{
+    width: 100%;
+}
+
+.statusBar::before {
+    content: "";
+    height: 20%;
+    background-color: #e5e5e5;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+}
+
+.statusBar > .point {
+    background-color: #c4c4c4;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statusBar > .point.done{
+    background-color: #22c55e;/**/
+}
+
+.point > .text {
+    font-weight: 200;
+    font-size:100%;
+    color: #c4c4c4;
+    text-align: center;
+    position: absolute;
+    top: 2.5em;
+    cursor:none ;
+}
+
+.point done {
+    background-color: #a5c926;
+}
+
+.point > .text.done {
+    color: #22c55e;/**/
+}
+
+.point > .main {
+    position: absolute;
+    border: 3px #c4c4c4 solid;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+}
+
+.point > .main.current {
+    border: 3px #22c55e solid;
+    width: 200%;
+    height: 200%;
+    border-radius: 100%;
+}
+
+/*two biggest section css*/
+
+section{
+    border:solid 1px gainsboro;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    display:inline-block;
+    /*float: left;*/
+}
+
+/*Section that put customer detail*/
+.paymentContent{
+    width:90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left{
+    width:60%;
+    margin: 0 auto;
+}
+
+.detail{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgb(196, 196, 196);
+    padding: 65px 60px;
+    margin-bottom: 30px;
+}
+
+/*Section that put cart detail, payment option and total price*/
+
+.headerBottom {
+    border-top: solid 1px gainsboro;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+.tab{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%
+}
+
+.tab button{
+    padding: 12px 8px;
+    margin: 0 10px 20px 10px;
+    border-radius: 0.5rem;
+    border:1px rgb(238, 238, 238) solid;
+}
+
+.tablinks{
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.tablinks:hover{
+    color: #22c55e;
+    border-color:#22c55e;
+}
+
+.tablinks.active{
+    color: #22c55e;
+    border-color:#22c55e;
+}
+
+/*Payment Method*/
+.tabcontent {
+    display: none;
+    padding: 3% 4%;
+    border: 1px solid #ccc;
+}
+
+select.type{
+    padding:1% 3%;
+    border-radius:25px;
+}
+
+/* Product detail and order summary part */
+table{
+    width:95%;
+    margin:3%;
+}
+
+th,td{
+    text-align:left;
+    padding:1%;
+}
+
+table#orderProdList{
+    width:100%;
+}
+
+th.images{
+    padding:2% 5% 2% 0%;
+    width:30%;
+}
+
+td.detail{
+    padding:0%;
+    width:20%;
+    vertical-align: top;
+}
+p.detail.name{
+    font-weight: bold;
+}
+
+td.detail > p{
+    margin:2%;
+}
+
+label{
+    font-size:88%;
+}
+
+input{
+    width:90%;
+    padding:2% 4% 2% 4%;
+    border: solid 2px #e5e5e5;
+    background-color: #f8f8f8;
+    border-radius:50px;
+    font-size:120%;
+}
+
+input#paySubmit{
+    width:100%;
+    text-align:center;
+    border:none;
+    background-color: #22c55e;
+    color:white;
+}
+
+input#paySubmit:hover{
+    transform: translateZ(-23px);
+    transition-duration:0.5s;
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.right{
+    width:35%;
+    margin: 0 auto;
+}
+
+.productImage{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#orderProdList{
+    margin: 0;
+}
+
+.paymentSummary2{
+    display: none;
+}
+
+@media (max-width: 1536px) {
+    .paymentContent{
+        flex-direction: column-reverse;
+
+    }
+    .left, .right{
+        width: 80%;
+    }
+
+    .paymentContent{
+        width:fit-content;
+    }
+    .paymentSummary{
+        display: none;
+    }
+    .paymentSummary2{
+        display: inherit;
+    }
+}
+
+
+
+
